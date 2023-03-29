@@ -34,15 +34,18 @@ export class Video extends Lightning.Component {
   //     Router.navigate('Profile', { message: 'Hello Profile PAGE, from the Video page. Here\'s your data' })
   // }
 
-  _handleUp() {
-    Router.navigate('profile', {
-      message: "Hello Profile PAGE, from the home page. Here's your data",
-    })
-  }
+  //   _handleUp() {
+  //     Router.navigate('profile', {
+  //       message: "Hello Profile PAGE, from the home page. Here's your data",
+  //     })
+  //   }
   pageTransition() {
     return 'up'
   }
-
+  _handleUp() {
+    Router.focusWidget('Menu')
+    //this.historyState
+  }
   set params(data) {
     this.message = data.message
     console.log({ data: this.message })

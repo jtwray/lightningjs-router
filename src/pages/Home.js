@@ -33,13 +33,17 @@ export class Home extends Lightning.Component {
   _handleEnter() {
     Router.navigate('about', { message: "Hello ABOUT PAGE, from the home page. Here's your data" })
   }
-  _handleUp() {
-    Router.navigate('video', { message: "Hello Video PAGE, from the home page. Here's your data" })
-  }
+  //   _handleUp() {
+  //     Router.navigate('video', { message: "Hello Video PAGE, from the home page. Here's your data" })
+  //   }
   pageTransition() {
     return 'up'
   }
   _handleBack() {
+    //this.historyState
+  }
+  _handleUp() {
+    Router.focusWidget('Menu')
     //this.historyState
   }
   set params(data) {

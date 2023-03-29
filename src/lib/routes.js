@@ -36,7 +36,7 @@ export default {
       widgets: ['Menu'],
     },
     {
-      path: 'profile',
+      path: 'user',
       component: Profile,
       widgets: ['Menu'],
     },

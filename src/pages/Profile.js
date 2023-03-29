@@ -38,7 +38,10 @@ export class Profile extends Lightning.Component {
   pageTransition() {
     return 'up'
   }
-
+  _handleUp() {
+    Router.focusWidget('Menu')
+    //this.historyState
+  }
   set params(data) {
     this.message = data.message
     console.log({ data: this.message })

@@ -9,4 +9,14 @@ export class Icon extends Lightning.Component {
       // }
     }
   }
+  _focus() {
+    this.patch({
+      src: Utils.asset('images/' + this.page + '-o.png'),
+    })
+  }
+  _unfocus() {
+    this.patch({
+      src: Utils.asset('images/' + this.page + '-w.png'),
+    })
+  }
 }
