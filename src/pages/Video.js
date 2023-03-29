@@ -31,12 +31,12 @@ export class Video extends Lightning.Component {
   //     Router.navigate('about')
   // }
   // _handleRight() {
-  //     Router.navigate('Profile', { message: 'Hello Profile PAGE, from the Video page. Here\'s your data' })
+  //     Router.navigate('User', { message: 'Hello User PAGE, from the Video page. Here\'s your data' })
   // }
 
   //   _handleUp() {
-  //     Router.navigate('profile', {
-  //       message: "Hello Profile PAGE, from the home page. Here's your data",
+  //     Router.navigate('User', {
+  //       message: "Hello User PAGE, from the home page. Here's your data",
   //     })
   //   }
   pageTransition() {

@@ -29,7 +29,7 @@ export class Menu extends Lightning.Component {
 
           src: Utils.asset('images/home-w.png'),
         },
-        Profile: {
+        User: {
           type: Icon,
           page: 'user',
           src: Utils.asset('images/user-w.png'),
@@ -46,6 +46,7 @@ export class Menu extends Lightning.Component {
   _init() {
     this.index = 0
   }
+
   _handleLeft() {
     if (this.index == 0) {
       return
@@ -66,7 +67,12 @@ export class Menu extends Lightning.Component {
     // if (this.index == this.tag('Background').children.length - 1) { return }
     // this.index++;
   }
+
+  _handleDown() {
+    Router.focusPage()
+  }
   _handleKey() {}
+
   _getFocused() {
     return this.getCurrentIcon()
   }

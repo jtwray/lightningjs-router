@@ -1,6 +1,6 @@
 import { Lightning, Utils, Router } from '@lightningjs/sdk'
 
-export class Profile extends Lightning.Component {
+export class User extends Lightning.Component {
   static _template() {
     return {
       Background: {
@@ -14,7 +14,7 @@ export class Profile extends Lightning.Component {
         y: 50,
         mount: 0.5,
         text: {
-          text: 'Profile',
+          text: 'User',
           fontSize: 64,
         },
       },
@@ -32,7 +32,7 @@ export class Profile extends Lightning.Component {
   // }
   _handleDown() {
     Router.navigate('Video', {
-      message: "Hello Video PAGE, from the Profile page. Here's your data",
+      message: "Hello Video PAGE, from the User page. Here's your data",
     })
   }
   pageTransition() {

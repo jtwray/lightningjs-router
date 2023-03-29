@@ -2,7 +2,7 @@ import { Boot } from '../pages/Boot'
 import { Home } from '../pages/Home'
 import { About } from '../pages/About'
 import { Video } from '../pages/Video'
-import { Profile } from '../pages/Profile'
+import { User } from '../pages/User'
 export default {
   // root: () => Promise(resolve => {
   //     // ...
@@ -37,7 +37,7 @@ export default {
     },
     {
       path: 'user',
-      component: Profile,
+      component: User,
       widgets: ['Menu'],
     },
     {
@@ -50,8 +50,8 @@ export default {
     let isLoggedIn = true
     // let isLoggedIn = false;
     // isLoggedIn= await axios.post(/login,{creds});
-    if (!isLoggedIn && to._hash == 'profile') {
-      console.log(" you can't access the profile page")
+    if (!isLoggedIn && to._hash == 'User') {
+      console.log(" you can't access the User page")
       // return (true);   //true, to, from, 'path'
       // return (to);     //true, to, from, 'path'
       return from //true, to, from, 'path'
@@ -65,8 +65,8 @@ export default {
     // return new Promise((resolve, reject) => {
     //     let isLoggedIn = true;
     //     // isLoggedIn= await axios.post(/login,{creds});
-    //     if (!isLoggedIn && to._hash == 'profile') {
-    //         console.log(' you can\'t access the profile page');
+    //     if (!isLoggedIn && to._hash == 'User') {
+    //         console.log(' you can\'t access the User page');
     //         // resolve(true);   //true, to, from, 'path'
     //         // resolve(to);     //true, to, from, 'path'
     //         resolve(from);      //true, to, from, 'path'
@@ -87,7 +87,7 @@ export default {
   // ! - error
   // home
   // /about
-  // /user/profile
+  // /user/User
   // /user/login
   // /products/:id
 }
